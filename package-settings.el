@@ -37,5 +37,8 @@
 (helm-projectile-on)
 (setq projectile-indexing-method 'alien)
 
+;; python-mode hook
+(add-hook 'python-mode-hook 'whitespace-mode 1)
+
 ;; start server for emacsclients
 ;; (server-start)
