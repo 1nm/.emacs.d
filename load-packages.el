@@ -14,7 +14,7 @@
     helm-projectile
     anzu
     python-mode
-    flycheck-python
+    flycheck
     auto-highlight-symbol
     ))
 
