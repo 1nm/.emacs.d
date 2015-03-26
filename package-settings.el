@@ -29,7 +29,7 @@
 ;; helm key rebinding
 (define-key helm-read-file-map (kbd "TAB") 'helm-execute-persistent-action)
 (define-key helm-find-files-map (kbd "TAB") 'helm-execute-persistent-action)
-(define-key global-map (kbd "C-x C-r") 'helm-recentf)
+(define-key global-map (kbd "C-x C-r") 'helm-for-files)
 
 ;; helm-projectile
 (projectile-global-mode)
