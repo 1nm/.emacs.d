@@ -12,6 +12,7 @@
     nyan-mode
     helm
     helm-projectile
+    helm-pydoc
     anzu
     python-mode
     flycheck
