@@ -38,7 +38,9 @@
 (setq projectile-indexing-method 'alien)
 
 ;; python-mode hook
-(add-hook 'python-mode-hook 'whitespace-mode 1)
+(add-hook 'python-mode-hook 'whitespace-mode)
+;; flycheck requires flake8 and pylint
+(add-hook 'python-mode-hook 'flycheck-mode)
 
 ;; start server for emacsclients
 ;; (server-start)
