@@ -9,9 +9,9 @@
 (prefer-coding-system 'utf-8-unix)
 (set-default-coding-systems 'utf-8-unix)
 
-;; I use alias emacs='emacsclient -nw' from cygwin terminal
-;; Remap C-x C-c to delete frame without killing emacs
-;; To kill emacs, use M-x kill-emacs
+;; this may be useful if you use emacsclient
+;; remap C-x C-c to delete frame without killing emacs
+;; to kill emacs, use M-x kill-emacs
 ;; (global-set-key "\C-x\C-c" 'delete-frame)
 
 (custom-set-variables
