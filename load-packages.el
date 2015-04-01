@@ -2,7 +2,9 @@
 
 (require 'package)
 (add-to-list 'package-archives
-  '("melpa" . "http://melpa.milkbox.net/packages/") t)
+	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
+(add-to-list 'package-archives
+	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (package-initialize)
 
 (defvar required-packages
@@ -17,6 +19,7 @@
     python-mode
     flycheck
     auto-highlight-symbol
+    pymacs
     ))
 
 (defun is-all-packages-installed ()
