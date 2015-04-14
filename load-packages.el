@@ -19,7 +19,7 @@
     python-mode
     flycheck
     auto-highlight-symbol
-    pymacs
+    exec-path-from-shell
     ))
 
 (defun is-all-packages-installed ()
