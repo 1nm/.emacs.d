@@ -38,6 +38,10 @@
 (helm-projectile-on)
 (setq projectile-indexing-method 'alien)
 
+;; enable exec-path-from-shell
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
 ;; enable whitespace-mode for python-mode
 ;; (add-hook 'python-mode-hook 'whitespace-mode)
 ;; (whitespace-line-column 100)

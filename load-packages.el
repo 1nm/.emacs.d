@@ -15,6 +15,7 @@
     helm
     helm-projectile
     helm-pydoc
+    helm-gtags
     anzu
     python-mode
     flycheck
