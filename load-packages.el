@@ -9,18 +9,19 @@
 
 (defvar required-packages
   '(
-    auto-complete
-    yasnippet
-    nyan-mode
-    helm
-    helm-projectile
-    helm-pydoc
-    helm-gtags
     anzu
-    python-mode
-    flycheck
+    auto-complete
     auto-highlight-symbol
     exec-path-from-shell
+    flycheck
+    helm
+    helm-gtags
+    helm-projectile
+    helm-pydoc
+    json-mode
+    nyan-mode
+    python-mode
+    yasnippet
     ))
 
 (defun is-all-packages-installed ()
