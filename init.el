@@ -4,6 +4,7 @@
 ))
 
 (setq default-directory "~/")
+(setq-default auto-save-default t)
 
 ;; set default coding system
 (prefer-coding-system 'utf-8-unix)
@@ -19,6 +20,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(auto-save-timeout 10)
  '(custom-enabled-themes (quote (tango-dark)))
  '(inhibit-startup-screen t)
  '(initial-scratch-message nil)
