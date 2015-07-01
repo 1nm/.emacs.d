@@ -1,0 +1,7 @@
+# ignore everything except init.el load-packages.el and package-settings.el and README.md
+*
+!.gitignore
+!init.el
+!load-packages.el
+!package-settings.el
+!README.md
