@@ -30,7 +30,11 @@
 (define-key helm-read-file-map (kbd "TAB") 'helm-execute-persistent-action)
 (define-key helm-find-files-map (kbd "TAB") 'helm-execute-persistent-action)
 (define-key global-map (kbd "C-x C-f") 'helm-for-files)
+(define-key global-map (kbd "C-x C-g") 'helm-find-files)
 (define-key global-map (kbd "M-x") 'helm-M-x)
+
+(setq helm-for-files-preferred-list
+      '(helm-source-buffers-list helm-source-recentf helm-source-files-in-current-dir))
 
 ;; helm-projectile
 (projectile-global-mode)
@@ -44,11 +48,12 @@
 
 ;; enable whitespace-mode for python-mode
 ;; (add-hook 'python-mode-hook 'whitespace-mode)
-;; (whitespace-line-column 100)
+(whitespace-line-column 250)
 
 ;; enable flycheck-mode for python-mode
 ;; requires flake8 and pylint
 (add-hook 'python-mode-hook 'flycheck-mode)
+(setq flycheck-flake8-maximum-line-length 250)
 
 ;; start server for emacsclients
 ;; (server-start)
