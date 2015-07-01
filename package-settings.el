@@ -48,7 +48,7 @@
 
 ;; enable whitespace-mode for python-mode
 ;; (add-hook 'python-mode-hook 'whitespace-mode)
-(whitespace-line-column 250)
+(setq whitespace-line-column 250)
 
 ;; enable flycheck-mode for python-mode
 ;; requires flake8 and pylint
