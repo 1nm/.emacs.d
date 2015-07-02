@@ -19,6 +19,7 @@
     helm-projectile
     helm-pydoc
     json-mode
+    magit
     nyan-mode
     python-mode
     yasnippet

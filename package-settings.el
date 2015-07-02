@@ -55,5 +55,9 @@
 (add-hook 'python-mode-hook 'flycheck-mode)
 (setq flycheck-flake8-maximum-line-length 250)
 
+;; magit
+
+(setq magit-last-seen-setup-instructions "1.4.0")
+
 ;; start server for emacsclients
 ;; (server-start)
