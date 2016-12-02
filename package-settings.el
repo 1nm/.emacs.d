@@ -7,6 +7,7 @@
 ;; auto complete mode
 (global-auto-complete-mode 1)
 (setq ac-modes '(python-mode))
+(setq ac-modes '(java-mode))
 
 ;; auto highlight symbol mode
 (global-auto-highlight-symbol-mode 1)
@@ -47,7 +48,8 @@
   (exec-path-from-shell-initialize))
 
 ;; enable whitespace-mode for python-mode
-;; (add-hook 'python-mode-hook 'whitespace-mode)
+(add-hook 'python-mode-hook 'whitespace-mode)
+(add-hook 'java-mode-hook 'whitespace-mode)
 (setq whitespace-line-column 250)
 
 ;; enable flycheck-mode for python-mode
@@ -57,7 +59,7 @@
 
 ;; magit
 
-(setq magit-last-seen-setup-instructions "1.4.0")
+;; (setq magit-last-seen-setup-instructions "1.4.0")
 
 ;; start server for emacsclients
-;; (server-start)
+(server-start)
