@@ -28,7 +28,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(auto-save-timeout 10)
- '(custom-enabled-themes (quote (adwaita)))
+ '(custom-enabled-themes (quote (tango-dark)))
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(initial-scratch-message nil)
