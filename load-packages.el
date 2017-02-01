@@ -22,6 +22,8 @@
     magit
     nyan-mode
     python-mode
+    dockerfile-mode
+    markdown-mode
     yasnippet
     ))
 
