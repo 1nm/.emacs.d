@@ -24,6 +24,7 @@
     python-mode
     dockerfile-mode
     markdown-mode
+    yaml-mode
     yasnippet
     ))
 

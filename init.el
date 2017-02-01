@@ -52,7 +52,7 @@
     ((sequence "TODO(t)" "WORKING(w)" "WAITING(a)" "SOMEDAY(s)" "|" "DONE(d)" "CANCELLED(c)"))))
  '(package-selected-packages
    (quote
-    (markdown-mode dockerfile-mode helm-ispell yasnippet python-mode nyan-mode magit json-mode helm-pydoc helm-projectile helm-gtags helm flycheck exec-path-from-shell auto-highlight-symbol auto-complete anzu)))
+    (yaml-mode markdown-mode dockerfile-mode helm-ispell yasnippet python-mode nyan-mode magit json-mode helm-pydoc helm-projectile helm-gtags helm flycheck exec-path-from-shell auto-highlight-symbol auto-complete anzu)))
  '(python-mode-hook (quote (whitespace-mode)) t)
  '(python-shell-interpreter "python3")
  '(scroll-bar-mode nil)
