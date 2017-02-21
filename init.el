@@ -34,10 +34,12 @@
  '(flycheck-flake8-maximum-line-length 120 t)
  '(flycheck-python-flake8-executable "/usr/local/bin/flake8")
  '(flycheck-python-pycompile-executable "/usr/local/bin/python3")
+ '(global-hl-line-mode t)
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(initial-scratch-message nil)
- '(java-mode-hook (quote (whitespace-mode)) t)
+ '(java-mode-hook (quote (whitespace-mode)))
+ '(markdown-command "pandoc -c ~/.pandoc/github.css")
  '(ns-alternate-modifier (quote super))
  '(ns-command-modifier (quote meta))
  '(org-log-done (quote time))
@@ -52,7 +54,7 @@
     ((sequence "TODO(t)" "WORKING(w)" "WAITING(a)" "SOMEDAY(s)" "|" "DONE(d)" "CANCELLED(c)"))))
  '(package-selected-packages
    (quote
-    (scala-mode yaml-mode markdown-mode dockerfile-mode helm-ispell yasnippet python-mode nyan-mode magit json-mode helm-pydoc helm-projectile helm-gtags helm flycheck exec-path-from-shell auto-highlight-symbol auto-complete anzu)))
+    (go-mode groovy-mode scala-mode yaml-mode markdown-mode dockerfile-mode helm-ispell yasnippet python-mode nyan-mode magit json-mode helm-pydoc helm-projectile helm-gtags helm flycheck exec-path-from-shell auto-highlight-symbol auto-complete anzu)))
  '(python-mode-hook (quote (whitespace-mode)) t)
  '(python-shell-interpreter "python3")
  '(scroll-bar-mode nil)
