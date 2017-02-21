@@ -16,8 +16,8 @@
     dockerfile-mode
     exec-path-from-shell
     flycheck
-    groovy-mode
     go-mode
+    groovy-mode
     helm
     helm-gtags
     helm-projectile
