@@ -31,7 +31,7 @@
 (define-key helm-read-file-map (kbd "TAB") 'helm-execute-persistent-action)
 (define-key helm-find-files-map (kbd "TAB") 'helm-execute-persistent-action)
 (define-key global-map (kbd "C-x C-f") 'helm-for-files)
-(define-key global-map (kbd "C-x C-g") 'helm-find-files)
+(define-key global-map (kbd "C-x C-g") 'helm-grep-do-git-grep)
 (define-key global-map (kbd "M-x") 'helm-M-x)
 
 (setq helm-for-files-preferred-list
@@ -48,8 +48,8 @@
 (exec-path-from-shell-initialize)
 
 ;; enable whitespace-mode for python-mode
-(add-hook 'python-mode-hook 'whitespace-mode)
-(add-hook 'java-mode-hook 'whitespace-mode)
+;; (add-hook 'python-mode-hook 'whitespace-mode)
+;; (add-hook 'java-mode-hook 'whitespace-mode)
 (setq whitespace-line-column 250)
 
 ;; enable flycheck-mode for python-mode
