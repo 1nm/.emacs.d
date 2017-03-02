@@ -1,17 +1,15 @@
 (require 'cl)
 
 (require 'package)
+
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(add-to-list 'package-archives
-	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
+                          '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 (package-initialize)
 
 (defvar required-packages
   '(
     anzu
     auto-complete
-    auto-highlight-symbol
     coffee-mode
     dockerfile-mode
     exec-path-from-shell
@@ -22,6 +20,7 @@
     helm-gtags
     helm-projectile
     helm-pydoc
+    highlight-symbol
     json-mode
     magit
     markdown-mode
@@ -41,7 +40,7 @@
 
 (unless (is-all-packages-installed)
   (package-refresh-contents)
-  ; install the missing packages
+  ;; install the missing packages
   (dolist (p required-packages)
     (when (not (package-installed-p p))
       (package-install p))))

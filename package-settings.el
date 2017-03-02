@@ -6,11 +6,14 @@
 
 ;; auto complete mode
 (global-auto-complete-mode 1)
-(setq ac-modes '(python-mode))
 (setq ac-modes '(java-mode))
+(setq ac-modes '(python-mode))
 
-;; auto highlight symbol mode
-(global-auto-highlight-symbol-mode 1)
+;; highlight symbol mode hooks
+(add-hook 'groovy-mode-hook 'highlight-symbol-mode)
+(add-hook 'java-mode-hook 'highlight-symbol-mode)
+(add-hook 'python-mode-hook 'highlight-symbol-mode)
+(add-hook 'scala-mode-hook 'highlight-symbol-mode)
 
 ;; anzu mode, remap query replace (regexp) to anzu
 (global-anzu-mode 1)
@@ -47,7 +50,7 @@
 ;; (when (memq window-system '(mac ns))
 (exec-path-from-shell-initialize)
 
-;; enable whitespace-mode for python-mode
+;; whitespace-mode hooks
 ;; (add-hook 'python-mode-hook 'whitespace-mode)
 ;; (add-hook 'java-mode-hook 'whitespace-mode)
 (setq whitespace-line-column 250)
@@ -56,10 +59,6 @@
 ;; requires flake8 and pylint
 (add-hook 'python-mode-hook 'flycheck-mode)
 (setq flycheck-flake8-maximum-line-length 250)
-
-;; magit
-
-;; (setq magit-last-seen-setup-instructions "1.4.0")
 
 ;; start server for emacsclients
 (server-start)
