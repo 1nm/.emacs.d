@@ -15,6 +15,7 @@
     exec-path-from-shell
     flycheck
     go-mode
+    gradle-mode
     groovy-mode
     helm
     helm-gtags

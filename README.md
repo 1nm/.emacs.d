@@ -1,4 +1,4 @@
-# Xiangning Liu Emacs Configuration
+# My Emacs Configuration
 
 ## Usage
 
@@ -25,6 +25,7 @@ alias emacsg=$VISUAL
 * [exec-path-from-shell](https://github.com/purcell/exec-path-from-shell)
 * [flycheck](https://github.com/flycheck/flycheck)
 * [go-mode](https://github.com/dominikh/go-mode.el)
+* [gradle-mode](https://github.com/jacobono/emacs-gradle-mode)
 * [groovy-mode](https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes)
 * [helm](https://github.com/emacs-helm/helm)
 * [helm-gtags](https://github.com/syohex/emacs-helm-gtags)
