@@ -60,5 +60,9 @@
 (add-hook 'python-mode-hook 'flycheck-mode)
 (setq flycheck-flake8-maximum-line-length 250)
 
+;; scroll shortcuts
+(define-key global-map (kbd "M-n") 'scroll-down-line)
+(define-key global-map (kbd "M-p") 'scroll-up-line)
+
 ;; start server for emacsclients
 (server-start)
