@@ -19,6 +19,7 @@
 (global-anzu-mode 1)
 (global-set-key [remap query-replace-regexp] 'anzu-query-replace-regexp)
 (global-set-key [remap query-replace] 'anzu-query-replace)
+(define-key global-map (kbd "C-c C-r") 'query-replace-regexp)
 
 ;; recentf mode
 (recentf-mode 1)
@@ -36,6 +37,7 @@
 (define-key global-map (kbd "C-x C-f") 'helm-for-files)
 (define-key global-map (kbd "C-x C-g") 'helm-grep-do-git-grep)
 (define-key global-map (kbd "M-x") 'helm-M-x)
+(define-key global-map (kbd "C-c C-i") 'helm-imenu)
 
 (setq helm-for-files-preferred-list
       '(helm-source-buffers-list helm-source-recentf helm-source-files-in-current-dir))
