@@ -53,8 +53,14 @@
 (exec-path-from-shell-initialize)
 
 ;; whitespace-mode hooks
-;; (add-hook 'python-mode-hook 'whitespace-mode)
-;; (add-hook 'java-mode-hook 'whitespace-mode)
+(add-hook 'python-mode-hook 'whitespace-mode)
+(add-hook 'java-mode-hook 'whitespace-mode)
+(add-hook 'c-mode-hook 'whitespace-mode)
+(add-hook 'scala-mode-hook 'whitespace-mode)
+(add-hook 'dockerfile-mode-hook 'whitespace-mode)
+(add-hook 'yaml-mode-hook 'whitespace-mode)
+(add-hook 'gradle-mode-hook 'whitespace-mode)
+(add-hook 'markdown-mode-hook 'whitespace-mode)
 (setq whitespace-line-column 250)
 
 ;; enable flycheck-mode for python-mode
@@ -65,6 +71,20 @@
 ;; scroll shortcuts
 (define-key global-map (kbd "M-n") 'scroll-down-line)
 (define-key global-map (kbd "M-p") 'scroll-up-line)
+
+;; markdown tables
+(require 'org-table)
+
+(defun cleanup-org-tables ()
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward "-+-" nil t) (replace-match "-|-"))
+    ))
+
+(add-hook 'markdown-mode-hook 'orgtbl-mode)
+(add-hook 'markdown-mode-hook
+          (lambda()
+            (add-hook 'after-save-hook 'cleanup-org-tables  nil 'make-it-local)))
 
 ;; start server for emacsclients
 (server-start)
