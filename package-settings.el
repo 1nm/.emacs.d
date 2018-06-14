@@ -1,8 +1,6 @@
 ;; nyan mode
-(if (display-graphic-p)
-    (progn
-      (nyan-mode 1)
-      (nyan-start-animation)))
+(nyan-mode 1)
+(nyan-start-animation)
 
 ;; auto complete mode
 (global-auto-complete-mode 1)
@@ -53,14 +51,14 @@
 (exec-path-from-shell-initialize)
 
 ;; whitespace-mode hooks
-(add-hook 'python-mode-hook 'whitespace-mode)
-(add-hook 'java-mode-hook 'whitespace-mode)
-(add-hook 'c-mode-hook 'whitespace-mode)
-(add-hook 'scala-mode-hook 'whitespace-mode)
-(add-hook 'dockerfile-mode-hook 'whitespace-mode)
-(add-hook 'yaml-mode-hook 'whitespace-mode)
-(add-hook 'gradle-mode-hook 'whitespace-mode)
-(add-hook 'markdown-mode-hook 'whitespace-mode)
+;;(add-hook 'python-mode-hook 'whitespace-mode)
+;;(add-hook 'java-mode-hook 'whitespace-mode)
+;;(add-hook 'c-mode-hook 'whitespace-mode)
+;;(add-hook 'scala-mode-hook 'whitespace-mode)
+;;(add-hook 'dockerfile-mode-hook 'whitespace-mode)
+;;(add-hook 'yaml-mode-hook 'whitespace-mode)
+;;(add-hook 'gradle-mode-hook 'whitespace-mode)
+;;(add-hook 'markdown-mode-hook 'whitespace-mode)
 (setq whitespace-line-column 250)
 
 ;; enable flycheck-mode for python-mode

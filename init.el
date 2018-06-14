@@ -26,6 +26,7 @@
    ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
  '(auto-save-timeout 10)
  '(custom-enabled-themes (quote (tango-dark)))
+ '(default-frame-alist (quote ((width . 200) (height . 80))))
  '(ediff-split-window-function (quote split-window-horizontally))
  '(flycheck-flake8-maximum-line-length 120 t)
  '(flycheck-python-flake8-executable "/usr/local/bin/flake8")
@@ -49,7 +50,7 @@
     ((sequence "TODO(t)" "WORKING(w)" "WAITING(a)" "SOMEDAY(s)" "|" "DONE(d)" "CANCELLED(c)"))))
  '(package-selected-packages
    (quote
-    (go-mode groovy-mode scala-mode yaml-mode markdown-mode dockerfile-mode helm-ispell yasnippet python-mode nyan-mode magit json-mode helm-pydoc helm-projectile helm-gtags helm flycheck exec-path-from-shell auto-complete anzu)))
+    (meghanada go-mode groovy-mode scala-mode yaml-mode markdown-mode dockerfile-mode helm-ispell yasnippet python-mode nyan-mode magit json-mode helm-pydoc helm-projectile helm-gtags helm flycheck exec-path-from-shell auto-complete anzu)))
  '(python-mode-hook (quote (whitespace-mode)) t)
  '(python-shell-interpreter "python3")
  '(scroll-bar-mode nil)
@@ -63,4 +64,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:height 160)))))
+ '(default ((t (:height 160 :family "Source Code Pro")))))
