@@ -22,9 +22,9 @@
 ;; recentf mode
 (recentf-mode 1)
 
-;; linum mode
-(global-linum-mode 1)
-(setq linum-format "%4d ")
+;; display line numbers mode
+(global-display-line-numbers-mode 1)
+;; (setq linum-format "%4d ")
 
 ;; helm mode
 (helm-mode 1)
