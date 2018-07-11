@@ -19,7 +19,7 @@
     groovy-mode
     helm
     helm-gtags
-    helm-projectile
+    ;; helm-projectile
     helm-pydoc
     highlight-symbol
     json-mode

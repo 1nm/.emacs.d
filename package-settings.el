@@ -41,10 +41,10 @@
       '(helm-source-buffers-list helm-source-recentf helm-source-files-in-current-dir))
 
 ;; helm-projectile
-(projectile-global-mode)
-(setq projectile-completion-system 'helm)
-(helm-projectile-on)
-(setq projectile-indexing-method 'alien)
+;; (projectile-global-mode)
+;; (setq projectile-completion-system 'helm)
+;; (helm-projectile-on)
+;; (setq projectile-indexing-method 'alien)
 
 ;; enable exec-path-from-shell
 ;; (when (memq window-system '(mac ns))
