@@ -18,6 +18,7 @@
     gradle-mode
     groovy-mode
     helm
+    helm-ag
     helm-gtags
     ;; helm-projectile
     helm-pydoc
