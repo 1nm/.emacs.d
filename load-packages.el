@@ -30,6 +30,7 @@
     python-mode
     dockerfile-mode
     markdown-mode
+    rainbow-delimiters
     scala-mode
     yaml-mode
     yasnippet
