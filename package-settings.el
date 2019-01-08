@@ -8,10 +8,7 @@
 (setq ac-modes '(python-mode))
 
 ;; highlight symbol mode hooks
-(add-hook 'groovy-mode-hook 'highlight-symbol-mode)
-(add-hook 'java-mode-hook 'highlight-symbol-mode)
-(add-hook 'python-mode-hook 'highlight-symbol-mode)
-(add-hook 'scala-mode-hook 'highlight-symbol-mode)
+(add-hook 'prog-mode-hook 'highlight-symbol-mode)
 
 ;; anzu mode, remap query replace (regexp) to anzu
 (require 'anzu)
@@ -60,14 +57,7 @@
 (exec-path-from-shell-initialize)
 
 ;; whitespace-mode hooks
-;;(add-hook 'python-mode-hook 'whitespace-mode)
-;;(add-hook 'java-mode-hook 'whitespace-mode)
-;;(add-hook 'c-mode-hook 'whitespace-mode)
-;;(add-hook 'scala-mode-hook 'whitespace-mode)
-;;(add-hook 'dockerfile-mode-hook 'whitespace-mode)
-;;(add-hook 'yaml-mode-hook 'whitespace-mode)
-;;(add-hook 'gradle-mode-hook 'whitespace-mode)
-;;(add-hook 'markdown-mode-hook 'whitespace-mode)
+(add-hook 'prog-mode-hook 'whitespace-mode)
 (setq whitespace-line-column 250)
 
 ;; enable flycheck-mode for python-mode
