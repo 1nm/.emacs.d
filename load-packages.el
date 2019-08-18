@@ -10,19 +10,19 @@
   '(
     anzu
     auto-complete
-    coffee-mode
-    dockerfile-mode
-    dockerfile-mode
+    ;; coffee-mode
+    ;; dockerfile-mode
+    ;; dockerfile-mode
     exec-path-from-shell
-    flycheck
-    go-mode
+    ;; flycheck
+    ;; go-mode
     gradle-mode
-    groovy-mode
+    ;; groovy-mode
     helm
     helm-ag
-    helm-gtags
+    ;; helm-gtags
     ;; helm-projectile
-    helm-pydoc
+    ;; helm-pydoc
     highlight-symbol
     json-mode
     magit
@@ -30,9 +30,9 @@
     nyan-mode
     python-mode
     rainbow-delimiters
-    scala-mode
+    ;; scala-mode
     yaml-mode
-    yasnippet
+    ;; yasnippet
     ))
 
 (defun is-all-packages-installed ()

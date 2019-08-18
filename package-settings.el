@@ -88,4 +88,4 @@
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 ;; start server for emacsclients
-(server-start)
+;; (server-start)
