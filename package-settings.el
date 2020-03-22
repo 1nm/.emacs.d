@@ -46,15 +46,9 @@
 (setq helm-for-files-preferred-list
       '(helm-source-buffers-list helm-source-recentf helm-source-files-in-current-dir))
 
-;; helm-projectile
-;; (projectile-global-mode)
-;; (setq projectile-completion-system 'helm)
-;; (helm-projectile-on)
-;; (setq projectile-indexing-method 'alien)
-
 ;; enable exec-path-from-shell
 ;; (when (memq window-system '(mac ns))
-(exec-path-from-shell-initialize)
+;; (exec-path-from-shell-initialize)
 
 ;; whitespace-mode hooks
 (add-hook 'prog-mode-hook 'whitespace-mode)

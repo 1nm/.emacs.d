@@ -33,7 +33,7 @@
  '(custom-enabled-themes (quote (tango-dark)))
  '(default-frame-alist (quote ((width . 200) (height . 80))))
  '(ediff-split-window-function (quote split-window-horizontally))
- '(flycheck-flake8-maximum-line-length 120)
+ '(flycheck-flake8-maximum-line-length 120 t)
  '(flycheck-python-flake8-executable "/usr/local/bin/flake8")
  '(flycheck-python-pycompile-executable "/usr/local/bin/python3")
  '(global-eldoc-mode nil)
@@ -62,12 +62,14 @@
  '(package-selected-packages
    (quote
     (helm-rg helm-ag meghanada go-mode groovy-mode scala-mode yaml-mode markdown-mode dockerfile-mode helm-ispell yasnippet python-mode nyan-mode magit json-mode helm-pydoc helm-projectile helm-gtags helm flycheck exec-path-from-shell auto-complete anzu)))
- '(python-mode-hook (quote (whitespace-mode)))
+ '(python-mode-hook (quote (whitespace-mode)) t)
  '(python-shell-interpreter "python3")
+ '(ring-bell-function (quote ignore))
  '(scroll-bar-mode nil)
  '(show-paren-mode t)
  '(tab-width 2)
  '(tool-bar-mode nil)
+ '(visible-bell nil)
  '(whitespace-style
    (quote
     (face tabs spaces trailing lines space-before-tab newline empty space-after-tab space-mark tab-mark newline-mark))))
