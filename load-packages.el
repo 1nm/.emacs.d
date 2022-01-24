@@ -11,7 +11,6 @@
     anzu
     auto-complete
     exec-path-from-shell
-    gradle-mode
     helm
     helm-ag
     highlight-symbol

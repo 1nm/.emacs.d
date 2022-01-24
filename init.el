@@ -3,7 +3,7 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-(package-initialize)
+;; (package-initialize)
 
 (load "~/.emacs.d/load-packages.el")
 (add-hook 'after-init-hook '(lambda () (load "~/.emacs.d/package-settings.el") ))
