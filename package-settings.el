@@ -81,5 +81,10 @@
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
+;; lsp-pyright
+;;(use-package lsp-pyright
+;; :ensure t
+(require 'lsp-pyright)
+
 ;; start server for emacsclients
 ;; (server-start)

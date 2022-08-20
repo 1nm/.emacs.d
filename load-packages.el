@@ -1,4 +1,5 @@
-(require 'cl)
+;; (require 'cl)
+(require 'cl-lib)
 
 (require 'package)
 
@@ -21,12 +22,13 @@
     python-mode
     rainbow-delimiters
     yaml-mode
+    lsp-pyright
     ))
 
 (defun is-all-packages-installed ()
-  (loop for p in required-packages
-        when (not (package-installed-p p)) do (return nil)
-        finally (return t)))
+  (cl-loop for p in required-packages
+        when (not (package-installed-p p)) do (cl-return nil)
+        finally (cl-return t)))
 
 (unless (is-all-packages-installed)
   (package-refresh-contents)

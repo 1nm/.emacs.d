@@ -15,6 +15,9 @@
 (prefer-coding-system 'utf-8-unix)
 (set-default-coding-systems 'utf-8-unix)
 
+ (set-face-font 'default "Source Code Pro")
+
+ 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -37,7 +40,6 @@
  '(flycheck-python-flake8-executable "/usr/local/bin/flake8")
  '(flycheck-python-pycompile-executable "/usr/local/bin/python3")
  '(global-eldoc-mode nil)
- '(global-hl-line-mode t)
  '(groovy-indent-offset 2)
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
@@ -58,7 +60,7 @@
  '(org-todo-keywords
    '((sequence "TODO(t)" "WORKING(w)" "WAITING(a)" "SOMEDAY(s)" "|" "DONE(d)" "CANCELLED(c)")))
  '(package-selected-packages
-   '(lsp-mode nginx-mode helm-rg helm-ag meghanada go-mode groovy-mode scala-mode yaml-mode markdown-mode dockerfile-mode helm-ispell yasnippet python-mode nyan-mode magit json-mode helm-pydoc helm-projectile helm-gtags helm flycheck exec-path-from-shell auto-complete anzu))
+   '(helm-lsp lsp-ui lsp-pyright lsp-python-ms leetcode lsp-java lsp-mode nginx-mode helm-rg helm-ag meghanada go-mode groovy-mode scala-mode yaml-mode markdown-mode dockerfile-mode helm-ispell yasnippet python-mode nyan-mode magit json-mode helm-pydoc helm-projectile helm-gtags helm flycheck exec-path-from-shell auto-complete anzu))
  '(python-mode-hook '(whitespace-mode) t)
  '(python-shell-interpreter "python3")
  '(ring-bell-function 'ignore)
@@ -69,12 +71,13 @@
  '(visible-bell nil)
  '(whitespace-style
    '(face tabs spaces trailing lines space-before-tab newline empty space-after-tab space-mark tab-mark newline-mark)))
+ 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:height 140 :family "Source Code Pro"))))
+ '(default ((t (:inherit nil :extend nil :stipple nil :foreground "#eeeeec" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 1 :width normal :foundry "default" :family "Source Code Pro"))))
  '(rainbow-delimiters-depth-1-face ((t (:foreground "dark orange"))))
  '(rainbow-delimiters-depth-2-face ((t (:foreground "deep pink"))))
  '(rainbow-delimiters-depth-3-face ((t (:foreground "chartreuse"))))
