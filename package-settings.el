@@ -1,6 +1,6 @@
 ;; nyan mode
-(nyan-mode 1)
-(nyan-start-animation)
+;; (nyan-mode 1)
+;; (nyan-start-animation)
 
 ;; auto complete mode
 (global-auto-complete-mode 1)

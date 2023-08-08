@@ -18,7 +18,6 @@
     json-mode
     magit
     markdown-mode
-    nyan-mode
     python-mode
     rainbow-delimiters
     yaml-mode
