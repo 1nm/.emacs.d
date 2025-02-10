@@ -47,8 +47,8 @@
  '(js-indent-level 2)
  '(markdown-command "pandoc -c ~/.pandoc/github.css")
  '(menu-bar-mode nil)
- '(ns-alternate-modifier 'super)
- '(ns-command-modifier 'meta)
+ '(ns-alternate-modifier 'meta)
+ ;; '(ns-command-modifier 'meta)
  '(org-log-done 'time)
  '(org-todo-keyword-faces
    '(("WAITING" . "Magenta")
