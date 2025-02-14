@@ -1,4 +1,3 @@
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -47,8 +46,8 @@
  '(js-indent-level 2)
  '(markdown-command "pandoc -c ~/.pandoc/github.css")
  '(menu-bar-mode nil)
- '(ns-alternate-modifier 'meta)
- ;; '(ns-command-modifier 'meta)
+ ;; '(ns-alternate-modifier 'meta)
+ '(ns-command-modifier 'meta)
  '(org-log-done 'time)
  '(org-todo-keyword-faces
    '(("WAITING" . "Magenta")

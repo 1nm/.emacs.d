@@ -30,6 +30,8 @@
 
 ;; display line numbers mode
 (global-display-line-numbers-mode 1)
+;; display column numbers
+(setq column-number-mode t)
 ;; (setq linum-format "%4d ")
 
 ;; helm mode
@@ -52,7 +54,7 @@
 
 ;; whitespace-mode hooks
 (add-hook 'prog-mode-hook 'whitespace-mode)
-(setq whitespace-line-column 250)
+(setq whitespace-line-column 500)
 
 ;; enable flycheck-mode for python-mode
 ;; requires flake8 and pylint
