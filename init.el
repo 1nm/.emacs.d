@@ -31,12 +31,9 @@
  '(anzu-replace-to-string-separator " => ")
  '(anzu-search-threshold 1000)
  '(auto-save-timeout 10)
- '(custom-enabled-themes '(adwaita))
+ '(custom-enabled-themes '(wheatgrass))
  '(default-frame-alist '((width . 200) (height . 80)))
  '(ediff-split-window-function 'split-window-horizontally)
- '(flycheck-flake8-maximum-line-length 120 t)
- '(flycheck-python-flake8-executable "/usr/local/bin/flake8")
- '(flycheck-python-pycompile-executable "/usr/local/bin/python3")
  '(global-eldoc-mode nil)
  '(groovy-indent-offset 2)
  '(indent-tabs-mode nil)
@@ -55,7 +52,10 @@
  '(org-todo-keywords
    '((sequence "TODO(t)" "WORKING(w)" "WAITING(a)" "SOMEDAY(s)" "|"
                "DONE(d)" "CANCELLED(c)")))
- '(package-selected-packages nil)
+ '(package-selected-packages
+   '(anzu auto-complete exec-path-from-shell helm-ag highlight-symbol
+          json-mode lsp-pyright magit nyan-mode python-mode
+          rainbow-delimiters yaml-mode))
  '(python-mode-hook '(whitespace-mode) t)
  '(python-shell-interpreter "python3")
  '(ring-bell-function 'ignore)

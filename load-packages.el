@@ -10,18 +10,13 @@
 (defvar required-packages
   '(
     anzu
-    auto-complete
-    exec-path-from-shell
     helm
     helm-ag
-    highlight-symbol
     json-mode
-    magit
     markdown-mode
-    python-mode
+    nyan-mode
     rainbow-delimiters
     yaml-mode
-    lsp-pyright
     ))
 
 (defun is-all-packages-installed ()

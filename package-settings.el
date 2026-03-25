@@ -1,14 +1,6 @@
 ;; nyan mode
-;; (nyan-mode 1)
-;; (nyan-start-animation)
-
-;; auto complete mode
-(global-auto-complete-mode 1)
-(setq ac-modes '(java-mode))
-(setq ac-modes '(python-mode))
-
-;; highlight symbol mode hooks
-(add-hook 'prog-mode-hook 'highlight-symbol-mode)
+(nyan-mode 1)
+(nyan-start-animation)
 
 ;; anzu mode, remap query replace (regexp) to anzu
 (require 'anzu)
@@ -48,18 +40,9 @@
 (setq helm-for-files-preferred-list
       '(helm-source-buffers-list helm-source-recentf helm-source-files-in-current-dir))
 
-;; enable exec-path-from-shell
-;; (when (memq window-system '(mac ns))
-;; (exec-path-from-shell-initialize)
-
 ;; whitespace-mode hooks
-(add-hook 'prog-mode-hook 'whitespace-mode)
-(setq whitespace-line-column 500)
-
-;; enable flycheck-mode for python-mode
-;; requires flake8 and pylint
-(add-hook 'python-mode-hook 'flycheck-mode)
-(setq flycheck-flake8-maximum-line-length 250)
+;; (add-hook 'prog-mode-hook 'whitespace-mode)
+;; (setq whitespace-line-column 500)
 
 ;; scroll shortcuts
 (define-key global-map (kbd "M-n") 'scroll-down-line)
@@ -82,11 +65,6 @@
 ;; rainbow-delimiters
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
-
-;; lsp-pyright
-;;(use-package lsp-pyright
-;; :ensure t
-(require 'lsp-pyright)
 
 ;; start server for emacsclients
 ;; (server-start)
