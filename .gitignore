@@ -1,7 +1,7 @@
-# ignore everything except init.el load-packages.el and package-settings.el and README.md
+# ignore everything except the config files below
 *
 !.gitignore
+!early-init.el
 !init.el
-!load-packages.el
-!package-settings.el
+!custom.el
 !README.md
