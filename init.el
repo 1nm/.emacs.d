@@ -175,14 +175,8 @@ helm's own `helm-do-grep-ag' provides the same ag/rg search.")
 (define-key global-map (kbd "C-c n l") #'my/open-latest-note)
 (define-key global-map (kbd "C-c n i") #'my/open-inbox-note)
 
-;; Show the latest note instead of *scratch* when Emacs starts without a file.
-;; `initial-buffer-choice' runs after init (so it is off the startup path) and
-;; also applies to frames created by `emacsclient -c' with no file argument.
-(setq initial-buffer-choice
-      (lambda ()
-        (or (when-let* ((latest (my/latest-note)))
-              (find-file-noselect latest))
-            (get-buffer-create "*scratch*"))))
+;; Start in *scratch* — a real note buffer on startup means every stray edit
+;; needs saving before quitting. Reach for notes explicitly via `C-c n'.
 
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
