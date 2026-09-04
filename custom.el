@@ -15,10 +15,7 @@
  '(global-eldoc-mode nil)
  '(groovy-indent-offset 2)
  '(indent-tabs-mode nil)
- '(ispell-program-name "hunspell")
- '(ispell-really-hunspell t)
  '(js-indent-level 2)
- '(markdown-command "pandoc -c ~/.pandoc/github.css")
  '(ns-command-modifier 'meta)
  '(org-log-done 'time)
  '(org-todo-keyword-faces
@@ -28,9 +25,7 @@
    '((sequence "TODO(t)" "WORKING(w)" "WAITING(a)" "SOMEDAY(s)" "|"
                "DONE(d)" "CANCELLED(c)")))
  '(package-selected-packages
-   '(anzu helm helm-ag json-mode markdown-mode nyan-mode rainbow-delimiters
-          yaml-mode))
- '(python-mode-hook '(whitespace-mode) t)
+   '(diff-hl nyan-mode rainbow-delimiters))
  '(python-shell-interpreter "python3")
  '(ring-bell-function 'ignore)
  '(show-paren-mode t)
