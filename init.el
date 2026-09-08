@@ -239,6 +239,15 @@ and loading that at startup costs ~22ms just to look for these files.
              (cons "\\.ya?ml\\'"
                    (if (my/treesit-grammar-p 'yaml) #'yaml-ts-mode #'conf-mode)))
 
+;; JSON pretty-printing lives in json.el, which has no autoload cookies, so the
+;; command is invisible until that library is loaded.  json-ts-mode only brings
+;; treesit indent rules -- those re-indent existing lines but never insert the
+;; newlines a minified file needs -- and json.c offers no pretty-printer at all.
+;; eglot.el reaches for exactly this function for the same reason.
+(autoload 'json-pretty-print-buffer "json" nil t)
+(with-eval-after-load 'json-ts-mode
+  (keymap-set json-ts-mode-map "C-c C-f" #'json-pretty-print-buffer))
+
 ;; Show whitespace in Python, where indentation is syntax.
 (add-hook 'python-base-mode-hook #'whitespace-mode)
 
