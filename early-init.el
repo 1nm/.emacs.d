@@ -30,6 +30,16 @@
 ;;; Native compilation
 (setq native-comp-async-report-warnings-errors 'silent)
 
+;; The libgccjit bundled with Emacs.app derives the deployment target from the
+;; Darwin kernel version (major - 9).  That held up to macOS 15 / Darwin 24,
+;; but on macOS 27 / Darwin 27 it yields "18.0", which clang rejects
+;; ("invalid version number in '-mmacosx-version-min=18.0'"), so every native
+;; compilation fails.  An explicit target skips the guess; 11.0 is what
+;; Emacs.app itself is built for.  Async compilation subprocesses inherit it.
+(when (and (eq system-type 'darwin)
+           (not (getenv "MACOSX_DEPLOYMENT_TARGET")))
+  (setenv "MACOSX_DEPLOYMENT_TARGET" "11.0"))
+
 ;;; Initial frame
 ;; Configure the frame before it is created so it is drawn once, with the
 ;; final size and without toolbar/scrollbars, instead of being resized.
